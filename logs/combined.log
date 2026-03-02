@@ -1,2 +1,40 @@
 {"level":"info","message":"Hello from Acquisitions","service":"acquisitions-api"}
 {"level":"info","message":"::1 - - [26/Feb/2026:04:53:56 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Hello from Acquisitions","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [26/Feb/2026:05:14:31 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Hello from Acquisitions","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [26/Feb/2026:05:15:57 +0000] \"GET / HTTP/1.1\" 200 23 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [26/Feb/2026:05:16:22 +0000] \"GET /api HTTP/1.1\" 200 42 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [26/Feb/2026:05:16:34 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [26/Feb/2026:05:17:15 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 31 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [26/Feb/2026:08:32:52 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 93 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [26/Feb/2026:08:33:31 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 92 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: tim193214343@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [26/Feb/2026:08:33:38 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 105 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User tim@gmail.com created successfully","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: tim@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Mar/2026:09:39:00 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 97 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User user@gmail.com created successfully","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: user@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Mar/2026:09:39:50 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 98 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Mar/2026:10:23:09 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 31 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"error","message":"Error logging in: Error: Invalid email or password","service":"acquisitions-api"}
+{"level":"error","message":"Signup error Invalid email or password","service":"acquisitions-api","stack":"Error: Invalid email or password\n    at loginUser (file:///C:/Users/Timothy/Documents/Computing%20Stuff/acquisitions/src/services/auth.service.js:45:19)\n    at async signin (file:///C:/Users/Timothy/Documents/Computing%20Stuff/acquisitions/src/controllers/auth.controller.js:56:22)"}
+{"level":"info","message":"::1 - - [01/Mar/2026:10:27:07 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 401 37 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"error","message":"Error logging in: Error: Invalid email or password","service":"acquisitions-api"}
+{"level":"error","message":"Signup error Invalid email or password","service":"acquisitions-api","stack":"Error: Invalid email or password\n    at loginUser (file:///C:/Users/Timothy/Documents/Computing%20Stuff/acquisitions/src/services/auth.service.js:46:19)\n    at async signin (file:///C:/Users/Timothy/Documents/Computing%20Stuff/acquisitions/src/controllers/auth.controller.js:56:22)"}
+{"level":"info","message":"::1 - - [01/Mar/2026:10:27:39 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 401 37 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: user@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Mar/2026:10:30:47 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 96 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"error","message":"Error logging in: Error: Invalid email or password","service":"acquisitions-api"}
+{"level":"error","message":"Signup error Invalid email or password","service":"acquisitions-api","stack":"Error: Invalid email or password\n    at loginUser (file:///C:/Users/Timothy/Documents/Computing%20Stuff/acquisitions/src/services/auth.service.js:41:45)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async signin (file:///C:/Users/Timothy/Documents/Computing%20Stuff/acquisitions/src/controllers/auth.controller.js:56:22)"}
+{"level":"info","message":"::1 - - [01/Mar/2026:10:30:54 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 401 37 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: tim@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Mar/2026:10:31:13 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 96 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Mar/2026:10:35:06 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 32 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"error","message":"Signout error req is not defined","service":"acquisitions-api","stack":"ReferenceError: req is not defined\n    at Object.get (file:///C:/Users/Timothy/Documents/Computing%20Stuff/acquisitions/src/utils/cookies.js:17:9)\n    at signout (file:///C:/Users/Timothy/Documents/Computing%20Stuff/acquisitions/src/controllers/auth.controller.js:79:27)\n    at Layer.handleRequest (C:\\Users\\Timothy\\Documents\\Computing Stuff\\acquisitions\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Timothy\\Documents\\Computing Stuff\\acquisitions\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (C:\\Users\\Timothy\\Documents\\Computing Stuff\\acquisitions\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (C:\\Users\\Timothy\\Documents\\Computing Stuff\\acquisitions\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (C:\\Users\\Timothy\\Documents\\Computing Stuff\\acquisitions\\node_modules\\router\\lib\\layer.js:152:17)\n    at C:\\Users\\Timothy\\Documents\\Computing Stuff\\acquisitions\\node_modules\\router\\index.js:295:15\n    at processParams (C:\\Users\\Timothy\\Documents\\Computing Stuff\\acquisitions\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\Timothy\\Documents\\Computing Stuff\\acquisitions\\node_modules\\router\\index.js:291:5)"}
+{"level":"info","message":"::1 - - [01/Mar/2026:10:37:34 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 42 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: tim@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Mar/2026:10:37:42 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 96 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [01/Mar/2026:10:37:49 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 42 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [02/Mar/2026:09:46:02 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"HTTPie\"","service":"acquisitions-api"}
