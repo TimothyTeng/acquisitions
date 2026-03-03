@@ -3,6 +3,7 @@ import {
   getAllUsers,
   getUserById,
   updateUser,
+    deleteUser,
 } from '#services/users.services.js';
 import { formatValidationError } from '#utils/format.js';
 import {

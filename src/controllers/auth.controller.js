@@ -93,5 +93,6 @@ export const signout = async (req, res, next) => {
     });
   } catch (e) {
     logger.error('Signout error', e);
+    next(e)
   }
 };
