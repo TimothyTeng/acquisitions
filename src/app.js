@@ -6,6 +6,7 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import authRoutes from "#routes/auth.routes.js";
 import securityMiddleware from "#middleware/security.middleware.js";
+import usersRoutes from "#routes/users.routes.js";
 
 const app = express();
 
@@ -21,7 +22,7 @@ app.use(cookieParser())
 
 // Logging middleware to monitor all the info about the traffic
 app.use(morgan("combined", {stream: {write:(message) => logger.info(message.trim())}}));
-app.use(securityMiddleware)
+//app.use(securityMiddleware)
 
 
 app.get('/', (req, res) => {
@@ -39,5 +40,6 @@ app.get('/api', (req, res) => {
 
 // When they access the path, they will go to the route
 app.use('/api/auth', authRoutes); // api/auth/sign-in
+app.use('/api/users', usersRoutes);
 
 export default app;
