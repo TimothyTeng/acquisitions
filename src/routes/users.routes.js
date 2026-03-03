@@ -1,8 +1,13 @@
 import express from 'express';
-import {deleteUserById, fetchAllUsers, fetchUserById, updateUserById} from "#controllers/users.controller.js";
-import {authenticateToken, requireRole} from "#middleware/auth.middleware.js";
+import {
+  deleteUserById,
+  fetchAllUsers,
+  fetchUserById,
+  updateUserById,
+} from '#controllers/users.controller.js';
+import { authenticateToken, requireRole } from '#middleware/auth.middleware.js';
 
-const router=express.Router();
+const router = express.Router();
 
 // GET /users - Get all users (admin only)
 router.get('/', authenticateToken, fetchAllUsers);
@@ -15,10 +20,10 @@ router.put('/:id', authenticateToken, updateUserById);
 
 // DELETE /users/:id - Delete user by ID (admin only)
 router.delete(
-    '/:id',
-    authenticateToken,
-    requireRole(['admin']),
-    deleteUserById
+  '/:id',
+  authenticateToken,
+  requireRole(['admin']),
+  deleteUserById
 );
 
 export default router;
