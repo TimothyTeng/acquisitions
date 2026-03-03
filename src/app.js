@@ -35,11 +35,15 @@ app.get('/health', (req, res) => {
 })
 
 app.get('/api', (req, res) => {
-  res.status(200).json({messsage: 'Acquisition API is running!'});
+  res.status(200).json({message: 'Acquisition API is running!'});
 })
 
 // When they access the path, they will go to the route
 app.use('/api/auth', authRoutes); // api/auth/sign-in
 app.use('/api/users', usersRoutes);
+
+app.use((req, res) => {
+  res.status(404).json({error: 'Route not found'})
+});
 
 export default app;
